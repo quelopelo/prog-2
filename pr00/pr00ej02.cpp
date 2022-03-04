@@ -7,7 +7,7 @@ int main()
 {
     int a, b, i;
     
-    printf("Escriba dos números naturales tal que A < B\n");
+    printf("Escriba dos números naturales tal que A ≤ B\n");
     printf(" A = ");
     scanf("%d", &a);
     printf(" B = ");
