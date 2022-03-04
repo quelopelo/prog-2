@@ -1,4 +1,4 @@
-# prog_1
+# prog_2
 **_Programación 2, FING, UDELAR_**
 
 Este es un repositorio sencillo para compartir los ejercicios del práctico de Programación 2, edición 2022.
