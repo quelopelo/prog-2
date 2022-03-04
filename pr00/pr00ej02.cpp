@@ -5,7 +5,7 @@ bool esPrimo(int n);
 
 int main()
 {
-    int a, b, i;
+    int a, b;
     
     printf("Escriba dos números naturales tal que A ≤ B\n");
     printf(" A = ");
@@ -14,7 +14,7 @@ int main()
     scanf("%d", &b);
     
     printf("Los números primos en el intervalo [A B] son:\n");
-    for (i = a; i <= b; i++)
+    for (int i = a; i <= b; i++)
         if (esPrimo(i))
             printf(" %d", i);
     printf("\n");
@@ -24,10 +24,9 @@ int main()
 
 bool esPrimo(int n)
 {
-    int i, m;
+    int i = 2;
+    int m = floor(sqrt(n));
     
-    i = 2;
-    m = floor(sqrt(n));
     while ((i <= m) && (n % i != 0))
         i++;
     

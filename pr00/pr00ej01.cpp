@@ -21,9 +21,8 @@ float PromClase(int c1, int c2, int c3, int c4, int c5)
 
 int MinClase(int c1, int c2, int c3, int c4, int c5)
 {
-    int min;
+    int min = c1;
     
-    min = c1;
     if (c2 < min)
         min = c2;
     if (c3 < min)
