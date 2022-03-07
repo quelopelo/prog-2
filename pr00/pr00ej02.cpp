@@ -27,7 +27,7 @@ bool esPrimo(int n)
     int i = 2;
     int m = floor(sqrt(n));
     
-    while ((i <= m) && (n % i != 0))
+    while (i <= m && n % i != 0)
         i++;
     
     return i > m;
