@@ -17,7 +17,7 @@ int main()
     else
         printf("La frase NO es palidrome\n");
 
-    delete[] frase;
+    delete [] frase;
     
     return 0;
 }

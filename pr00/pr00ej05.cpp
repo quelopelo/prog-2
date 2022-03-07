@@ -23,6 +23,9 @@ int main()
         printf(" %d", vec_ord[i]);
     printf("\n");
     
+    delete [] vec;
+    delete [] vec_ord;
+    
     return 0;
 }
 
