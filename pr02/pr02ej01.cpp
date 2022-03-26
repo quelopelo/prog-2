@@ -9,7 +9,7 @@ void ordenar (float *A, uint n);
 Precondición: n >= 0. Si n >= 1 => A[1..n] está ordenado de manera
 creciente. A[n+1] es indeterminado.
 Postcondición: A[1..n+1] queda ordenado de manera creciente */
-void insertarOrdenado (float * A, uint n, float e);
+void insertarOrdenado (float *A, uint n, float e);
 
 int main()
 {
@@ -46,7 +46,7 @@ void ordenar (float *A, uint n)
     
 }
 
-void insertarOrdenado (float * A, uint n, float e)
+void insertarOrdenado (float *A, uint n, float e)
 {
     if (n == 0)
         A[0] = e;
