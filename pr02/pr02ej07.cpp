@@ -5,9 +5,9 @@ typedef unsigned int uint;
 
 /* Evalúa P(x):
 P[0] + ... + P[i] x^i + ... + P[n] x^n */
-float horner (float * P, uint n, float x);
+float horner (float *P, uint n, float x);
 
-float hornerAux (float * P, uint n, uint pos, float x);
+float hornerAux (float *P, uint n, uint pos, float x);
 
 int main()
 {
@@ -36,15 +36,17 @@ int main()
         horner(P, grado, x));
     printf("La evaluación usando el algoritmo iterativo es: %.3f\n", y);
     
+    delete [] P;
+    
     return 0;
 }
 
-float horner (float * P, uint n, float x)
+float horner (float *P, uint n, float x)
 {
     return hornerAux(P, n, 0, x);
 }
 
-float hornerAux (float * P, uint n, uint pos, float x)
+float hornerAux (float *P, uint n, uint pos, float x)
 {
     if (pos == n)
         return P[pos];
