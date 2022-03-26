@@ -6,10 +6,10 @@ typedef unsigned int uint;
 Precondición: n % 2 == 0
 V[1..n/2] = {true}, V[n/2 + 1..n] = {false}.
 Postcondición: V[i] = true si y solo si i%2 == 1. */
-void vasos (bool * V, uint n);
+void vasos (bool *V, uint n);
 
-void vasosAux (bool * V, uint n, uint ind);
-void imprimirVasos (bool * V, uint n);
+void vasosAux (bool *V, uint n, uint ind);
+void imprimirVasos (bool *V, uint n);
 
 int main()
 {
@@ -32,15 +32,17 @@ int main()
     printf("Vasos después de ordenar:\n");
     imprimirVasos(V, n);
     
+    delete [] V;
+    
     return 0;
 }
 
-void vasos (bool * V, uint n)
+void vasos (bool *V, uint n)
 {
     vasosAux(V, n, 0);
 }
 
-void vasosAux (bool * V, uint n, uint ind)
+void vasosAux (bool *V, uint n, uint ind)
 {
     bool aux;
     
@@ -56,7 +58,7 @@ void vasosAux (bool * V, uint n, uint ind)
     }
 }
 
-void imprimirVasos (bool * V, uint n)
+void imprimirVasos (bool *V, uint n)
 {
     for (uint i = 0; i < n; i++)
         printf(" %d", V[i]);
